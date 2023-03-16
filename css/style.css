@@ -619,6 +619,7 @@ a:focus {
 .blog-card .img-holder {
   min-width: 350px;
   max-width: 350px;
+  max-height: 200px;
 }
 
 .blog-card .img-holder img {
