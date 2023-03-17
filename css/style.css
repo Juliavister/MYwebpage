@@ -540,7 +540,7 @@ a:focus {
 
 .portfolio .filters a.active {
   opacity: 1;
-  background: #F85C70;
+  background: #C8A2C8;
   color: #fff;
 }
 
@@ -669,6 +669,115 @@ a:focus {
   position: relative;
   top: 1px;
 }
-
-
 /*blog cards end*/
+
+.progress {
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius:8px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar {
+  height: 18px;
+  background-color:#C8A2C8;
+  border-radius: 4px;
+  transition: 0.4s linear;
+  transition-property: width, background;
+  padding-bottom: 10px;
+}
+.progress-bar2 {
+  height: 18px;
+  border-radius: 40px;
+  background-image:
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+
+@keyframes progressAnimation {
+  0%   { width: 5%; background-color: #F9BCCA;}
+  100% { width: 85%; background-color:#C8A2C8 }
+}
+
+/* skill progress */
+
+.wrapper {
+  width: 400px;
+  font-family: 'Roboto', sans-serif;
+  margin:0 auto;
+}
+.skill {
+  margin-bottom: 35px;
+  position: relative;
+  overflow-x:hidden;
+}
+.skill > p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1716;
+  margin: 0;
+}
+
+.skill:before {
+  width: 100%;
+  height: 10px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #f8faf9;
+  bottom: 0;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background:#C8A2C8;
+  display: block;
+  position: relative;
+}
+
+.skill-bar span {
+  position: absolute;
+  border-top: 5px solid #F9BCCA;
+  top: -30px;
+  padding: 0;
+  font-size: 18px;
+  padding: 3px 0;
+  font-weight: 500;
+}
+.skill-bar {
+  position: relative;
+}
+.skill1 .skill-count1 {
+ right: 0;
+}
+.skill1 {
+  width: 95%;
+}
+.skill2 {
+  width: 90%;
+}
+.skill2 .skill-count2 {
+  right: 0;
+}
+.skill3{
+  width: 85%;
+}
+.skill3 .skill-count3 {
+  right: 0;
+}
+.skill4{
+  width: 65%;
+}
+.skill4 .skill-count4 {
+  right: 0;
+}
+.skill5{
+  width: 50%;
+}
+.skill5 .skill-count5 {
+  right: 0;
+}
+
+
