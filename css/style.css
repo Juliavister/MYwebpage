@@ -3,8 +3,6 @@ body {
   color: #000205;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -70,8 +68,6 @@ h4 {
 }
 
 
-
-
 /*header section*/
 .top_container {
   font-family: 'Poppins', sans-serif;
@@ -87,8 +83,6 @@ nav.navbar.navbar-expand-lg {}
   text-align: center;
   text-transform: uppercase;
 }
-
-
 
 a,
 a:hover,
@@ -112,7 +106,6 @@ a:focus {
 .top_container.sub_page {
   height: auto;
 }
-
 
 
 .custom_nav-container .nav_search-btn {
@@ -237,8 +230,8 @@ a:focus {
   background-image: url(../images/right-arrow.png);
   left: 95px;
 }
-
 /* end hero section */
+
 
 /* about section */
 .about_section {
@@ -257,7 +250,6 @@ a:focus {
 .about_detail-box p {
   margin: 45px 0;
 }
-
 /* end about section */
 
 /* practice section */
@@ -297,7 +289,6 @@ a:focus {
 
 }
 
-
 .practice_box h4 {
   margin-top: 15px;
 }
@@ -317,9 +308,6 @@ a:focus {
   color: #C8A2C8;
   font-weight: bold;
 }
-
-
-
 
 /* end Practice section */
 
@@ -357,7 +345,6 @@ a:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 /* end welcome section */
 
 /* contact section */
@@ -405,7 +392,6 @@ a:focus {
   position: relative;
   margin-left: 2.5%;
 }
-
 /* end contact section */
 
 /* info section */
@@ -475,7 +461,6 @@ a:focus {
 
 
 /* footer section*/
-
 .footer_section {
   background-color: #fdfdfe;
   padding: 20px 0;
@@ -493,6 +478,52 @@ a:focus {
 }
 
 /* end footer section*/
+
+/* start skills section slideshow */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.dot-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
 
 
 /* start practice(not home) section */
@@ -671,6 +702,8 @@ a:focus {
 }
 /*blog cards end*/
 
+/*
+
 .progress {
   padding: 6px;
   background: rgba(0, 0, 0, 0.25);
@@ -699,9 +732,12 @@ a:focus {
   0%   { width: 5%; background-color: #F9BCCA;}
   100% { width: 85%; background-color:#C8A2C8 }
 }
+*/
+
 
 /* skill progress */
 
+/*
 .wrapper {
   width: 400px;
   font-family: 'Roboto', sans-serif;
@@ -718,7 +754,9 @@ a:focus {
   color: #1a1716;
   margin: 0;
 }
+ */
 
+/*
 .skill:before {
   width: 100%;
   height: 10px;
@@ -779,5 +817,8 @@ a:focus {
 .skill5 .skill-count5 {
   right: 0;
 }
+ */
+
+
 
 
