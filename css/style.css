@@ -682,6 +682,66 @@ li {
   position: relative;
   top: 1px;
 }
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.skills-section h3 {
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  background-color: #e0f7fa;
+}
+
+.skill-card i {
+  margin-right: 8px;
+  color: #C8A2C8; /* soft purple tone */
+}
+
+.skill-category {
+  margin-bottom: 40px;
+}
+
+.skill-category h4 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.4em;
+  color: #c8a2c8; /* nice purple */
+  padding-bottom: 5px;
+  text-align: center; /* add this */
+}
+
+
+
+
+
+
+
+
 /*blog cards end*/
 
 /*
