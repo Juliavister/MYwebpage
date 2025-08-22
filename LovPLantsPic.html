@@ -42,73 +42,93 @@
            display: table;
            clear: both;
        }
+       
+       /* Go Back Button */
+       .go-back-btn {
+           padding: 10px 20px;
+           background: #F08080; /* Matches heading color */
+           color: white;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           margin-bottom: 20px;
+           font-size: 16px;
+       }
+       .go-back-btn:hover {
+           background: #d96f6f; /* Slightly darker on hover */
+       }
     </style>
 </head>
 <body>
-<h1 style = "color:#F08080" >Lovable Plants IOS application (simulator screen) </h1>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/LovableHome.png">
-      <img src="images/LovableHome.png" alt="Home" width="600" height="400">
-    </a>
-    <div class="desc">Home screen</div>
+  <!-- Go Back Button -->
+  <button class="go-back-btn" onclick="window.history.back()">← Go Back</button>
+
+  <h1 style="color:#F08080">Lovable Plants IOS Application (Simulator Screens)</h1>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/LovableHome.png">
+        <img src="images/LovableHome.png" alt="Home">
+      </a>
+      <div class="desc">Home screen</div>
+    </div>
   </div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/LovavleNotifON.png">
-      <img src="images/LovavleNotifON.png" alt="Home ON" width="600" height="400">
-    </a>
-    <div class="desc">Enable notifications on</div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/LovavleNotifON.png">
+        <img src="images/LovavleNotifON.png" alt="Enable notifications">
+      </a>
+      <div class="desc">Enable notifications</div>
+    </div>
   </div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/LovableReminder.png">
-      <img src="images/LovableReminder.png" alt="Home ON" width="600" height="400">
-    </a>
-    <div class="desc">Set reminder screen</div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/LovableReminder.png">
+        <img src="images/LovableReminder.png" alt="Set reminder">
+      </a>
+      <div class="desc">Set reminder screen</div>
+    </div>
   </div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/LovableSetDate.png">
-      <img src="images/LovableSetDate.png" alt="Home ON" width="600" height="400">
-    </a>
-    <div class="desc">Choose date</div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/LovableSetDate.png">
+        <img src="images/LovableSetDate.png" alt="Choose date">
+      </a>
+      <div class="desc">Choose date</div>
+    </div>
   </div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/LovableSetTime.png">
-      <img src="images/LovableSetTime.png" alt="Home ON" width="600" height="400">
-    </a>
-    <div class="desc">Choose time</div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/LovableSetTime.png">
+        <img src="images/LovableSetTime.png" alt="Choose time">
+      </a>
+      <div class="desc">Choose time</div>
+    </div>
   </div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/LovableAddPlant.png">
-      <img src="images/LovableAddPlant.png" alt="Home ON" width="600" height="400">
-    </a>
-    <div class="desc">Add plant</div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/LovableAddPlant.png">
+        <img src="images/LovableAddPlant.png" alt="Add plant">
+      </a>
+      <div class="desc">Add plant</div>
+    </div>
   </div>
-</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/LovableEditList.png">
-      <img src="images/LovableEditList.png" alt="Home ON" width="600" height="400">
-    </a>
-    <div class="desc">Edit plant list</div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/LovableEditList.png">
+        <img src="images/LovableEditList.png" alt="Edit plant list">
+      </a>
+      <div class="desc">Edit plant list</div>
+    </div>
   </div>
-</div>
 
+  <div class="clearfix"></div>
 </body>
 </html>

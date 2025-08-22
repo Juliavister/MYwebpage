@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ProtectHer (Updating)</title>
+  <title>ProtectHer</title>
   <style>
     div.gallery {
       border: 1px solid #ccc;
@@ -42,28 +42,49 @@
       display: table;
       clear: both;
     }
+
+    /* Go Back Button */
+    .go-back-btn {
+      padding: 10px 20px;
+      background: #F08080; /* Matches heading color */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    .go-back-btn:hover {
+      background: #d96f6f; /* Slightly darker on hover */
+    }
   </style>
 </head>
 <body>
-<h1 style = "color:#F08080" > ProtectHer Screenshots </h1>
+
+<!-- Go Back Button -->
+<button class="go-back-btn" onclick="window.history.back()">← Go Back</button>
+
+<h1 style="color:#F08080">ProtectHer Screenshots</h1>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="images/">
-      <img src="images/" alt="Home" width="600" height="400">
+    <a href="images/PH-home.JPG" class="glightbox" data-title="Home">
+      <img src="images/PH-home.JPG" alt="Home">
     </a>
     <div class="desc">Home</div>
   </div>
-</div> 
+</div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="images/">
-      <img src="images/" alt="Home ON" width="600" height="400">
+    <a href="images/PH-location.JPG" class="glightbox" data-title="Interactive Map">
+      <img src="images/PH-location.JPG" alt="Interactive Map">
     </a>
     <div class="desc">Interactive Map</div>
   </div>
 </div>
+
+<div class="clearfix"></div>
 
 </body>
 </html>

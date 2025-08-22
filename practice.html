@@ -95,7 +95,7 @@
           <div class="portfolio" >
             <div class="filters">
               <a data-filter=".new"> New</a>
-              <a href="#other-section" data-filter=".other">Games</a>
+              <a href="#games-section" data-filter=".games">Games</a>
               <a href="#web-section" data-filter=".web">Web</a>
               <a href="#app-section" data-filter=".app">App</a>
             </div>
@@ -114,7 +114,7 @@
                 </div>
               </div>
 
-              <div class="blog-card app new">
+              <div class="blog-card web new">
                 <div class="img-holder">
                   <img src = "images/BudgetBuddyDash.PNG">
                 </div>
@@ -127,7 +127,7 @@
                 </div>
               </div>
 
-                 <div class="blog-card other new">
+                 <div class="blog-card games new">
                 <div class="img-holder">
                   <img src = "images/game1.jpg">
                 </div>
@@ -151,13 +151,13 @@
                 </div>
               </div>
 
-              <div class="blog-card app new">
+              <div class="blog-card games new">
                 <div class="img-holder">
                   <img src = "images/ConnectFour.jpeg">
                 </div>
                 <div class="content-holder">
                   <h4 class="heading-text">Connect Four</h4>
-                  <p> Project made for Games in AI class. A connect four game where you play against an AI (using minmax algorithm) </p>
+                  <p> Project made for my "Games in AI" bachelor class. A connect four game where you play against an AI (using minmax algorithm) </p>
                   <a style="color: #C8A2C8" href="https://github.com/Juliavister/ConnectFourGame/tree/main"> See it on GitHub!</a>
                 </div>
               </div>
@@ -255,21 +255,8 @@
       <div>
         <div class="info_social">
           <div>
-              <a href="https://www.facebook.com/julia.vister">
-                 <img src="images/fb.png" alt="Facebook">
-              </a>
-          </div>
-          <div>
-            <img src="images/twitter.png" alt="">
-          </div>
-          <div>
               <a href="https://www.linkedin.com/in/julia-vister-a6756b22b">
                  <img src="images/linkedin.png" alt="Linkedin">
-              </a>
-          </div>
-          <div>
-              <a href="https://www.instagram.com/julia.vister/">
-                  <img src="images/insta.png" alt="Instagram">
               </a>
           </div>
         </div>
@@ -300,6 +287,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
   </script>
+
+<script>
+  $(document).ready(function(){
+    // init Isotope
+    var $grid = $('.portfolio-container').isotope({
+      itemSelector: '.blog-card',
+      layoutMode: 'fitRows'
+    });
+
+    // filter items on link click
+    $('.filters a').click(function(e){
+      e.preventDefault(); // prevent page jump
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+      
+      // optional: highlight active filter
+      $('.filters a').removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+</script>
 
 
 </body>

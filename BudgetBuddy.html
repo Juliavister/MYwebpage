@@ -42,15 +42,34 @@
       display: table;
       clear: both;
     }
+
+    /* Go Back Button */
+    .go-back-btn {
+      padding: 10px 20px;
+      background: #F08080; /* Matches heading color */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    .go-back-btn:hover {
+      background: #d96f6f; /* Slightly darker on hover */
+    }
   </style>
 </head>
 <body>
-<h1 style = "color:#F08080" > BudgetBuddy content </h1>
+
+<!-- Go Back Button -->
+<button class="go-back-btn" onclick="window.history.back()">← Go Back</button>
+
+<h1 style="color:#F08080">BudgetBuddy Content</h1>
 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="images/BudgetBuddyReg.png">
-      <img src="images/BudgetBuddyReg.png" alt="Home ON" width="600" height="400">
+      <img src="images/BudgetBuddyReg.png" alt="Register User">
     </a>
     <div class="desc">Register User</div>
   </div>
@@ -59,7 +78,7 @@
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="images/BudgetBuddyLogin.png">
-      <img src="images/BudgetBuddyLogin.png" alt="Home ON" width="600" height="400">
+      <img src="images/BudgetBuddyLogin.png" alt="Login">
     </a>
     <div class="desc">Login</div>
   </div>
@@ -68,7 +87,7 @@
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="images/BudgetBuddyDash.PNG">
-      <img src="images/BudgetBuddyDash.PNG" alt="Home" width="600" height="400">
+      <img src="images/BudgetBuddyDash.PNG" alt="Dashboard">
     </a>
     <div class="desc">Dashboard</div>
   </div>
@@ -77,7 +96,7 @@
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="images/BudgetBuddyMonthly.PNG">
-      <img src="images/BudgetBuddyMonthly.PNG" alt="Home ON" width="600" height="400">
+      <img src="images/BudgetBuddyMonthly.PNG" alt="Monthly Report">
     </a>
     <div class="desc">Monthly Report</div>
   </div>
@@ -86,7 +105,7 @@
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="images/BudgetBuddyAlert.png">
-      <img src="images/BudgetBuddyAlert.png" alt="Home ON" width="600" height="400">
+      <img src="images/BudgetBuddyAlert.png" alt="Pop up alert">
     </a>
     <div class="desc">Pop up alert</div>
   </div>
@@ -95,24 +114,22 @@
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="images/BudgetBuddyChart.png">
-      <img src="images/BudgetBuddyChart.png" alt="Home ON" width="600" height="400">
+      <img src="images/BudgetBuddyChart.png" alt="Yearly category report example">
     </a>
     <div class="desc">Yearly category report example</div>
   </div>
 </div>
 
-
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="images/BudgetBuddyHistory.png">
-      <img src="images/BudgetBuddyHistory.png" alt="Home ON" width="600" height="400">
+      <img src="images/BudgetBuddyHistory.png" alt="History Feature">
     </a>
     <div class="desc">History Feature</div>
   </div>
 </div>
 
-
-
+<div class="clearfix"></div>
 
 </body>
 </html>
