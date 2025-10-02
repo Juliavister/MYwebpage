@@ -305,7 +305,7 @@ a:focus {
 .heading-text {
   padding: 0;
   margin: 0;
-  color: #C8A2C8;
+  color: #8e4585;
   font-weight: bold;
 }
 
@@ -367,13 +367,18 @@ li {
   content: "";
   width: 40%;
   height: 100%;
-  background-image: url(../images/connected-technology.jpg);
+  background-image: url(../images/dagen@ifi.png);
   position: absolute;
   top: 0;
   right: 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.welcome_section.github-photo::before {
+  background-image: url("../images/ctf.png");
+}
+
 /* end welcome section */
 
 /* contact section */
@@ -425,8 +430,7 @@ li {
 
 /* info section */
 .info_section {
-  padding-top: 100px;
-  padding-bottom: 1px;
+  padding: 20px 0; 
   color: #fff;
   background-color: #2a2a2c;
 }
@@ -485,13 +489,28 @@ li {
   margin: 30px auto;
 }
 
+.photo_me {
+  text-align: center; /* ensure center alignment */
+}
+
+.photo_me .info_social {
+  display: flex;
+  justify-content: center; /* force icon to center horizontally */
+  width: 100%;
+}
+
+.photo_me .info_social img {
+  width: 32px; /* keep icon small */
+}
+
+
 /* end info section */
 
 
 
 /* footer section*/
 .footer_section {
-  background-color: #fdfdfe;
+  background-color: #2a2a2c;
   padding: 20px 0;
   font-family: 'Poppins', sans-serif;
 }
